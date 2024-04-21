@@ -1,0 +1,1 @@
+Photo by Christina Morillo: https://www.pexels.com/photo/closeup-photo-of-silver-macbook-pro-on-table-1181269/
