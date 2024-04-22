@@ -8,7 +8,7 @@ function generateTitleContainer() {
   title.classList.add('title');
   title.textContent = 'Project Name';
 
-  let icon = document.createElement('div');
+  let icon = document.createElement('img');
   icon.classList.add('icon');
   icon.src = githubIcon;
 
@@ -22,7 +22,7 @@ function generateProjectExample() {
   container.classList.add('project');
 
   let placeHolder = document.createElement('h4');
-  placeHolder.classList.add('placeholder');
+  placeHolder.classList.add('screenshot-placeholder');
   placeHolder.textContent =
     'Placeholder Text: This Should be replaced by a screenshot of the project it represents.';
 
@@ -31,7 +31,7 @@ function generateProjectExample() {
   let description = document.createElement('p');
   description.classList.add('description');
   description.textContent =
-    "This is placeholder text that should, in the future, be replaced with actual descriptions of the projects they link to. Not sure how I'll easy it'll be to do so and whether or not it can be done with js DOM manipulation or whether it will have to be heavily hard-coded.";
+    "This is placeholder text that should, in the future, be replaced with actual descriptions of the projects they link to. Not sure how I'll easy it'll be to do so and if it will have to be heavily hard-coded.";
 
   container.appendChild(placeHolder);
   container.appendChild(titleContainer);
