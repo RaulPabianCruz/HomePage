@@ -7,7 +7,8 @@
     </head>
     <body>
         <main>
-            <header class="header">
+            <header>
+                <div class="header-info-container">
                     <img src="./resources/mob545.jpg"
                         srcset="./resources/mob485.jpg 485w, ./resources/mob545.jpg 545w, ./resources/mob700.jpg 700w"
                         sizes="(max-width: 600px) 80vw, (max-width: 1200px) 45vw, min(600px, 33vw)"
@@ -16,10 +17,11 @@
                     <h2 class="title">About me</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, doloremque accusantium. Deserunt accusamus maxime quod consequatur obcaecati incidunt similique labore accusantium dolorem porro! Modi incidunt consequatur distinctio animi neque voluptate.</p>
                     <div class="links-container">
-                        <img src="./resources/twitter.svg" alt="X, formerly known as twitter">
-                        <img src="./resources/github.svg" alt="GitHub">
+                        <img src="./resources/twitter.svg" class="link icon" alt="X, formerly known as twitter">
+                        <img src="./resources/github.svg" class="link icon" alt="GitHub">
                     </div>  
-               </header>
+                </div>
+            </header>
 
             <section class="projects-section">
                 <h2 class="title">My Work</h2>
@@ -28,18 +30,30 @@
                 </div>
             </section>
             
-            <footer class="footer">
-                <div class="contact-info-container">
-                    <h2 class="title">Contact Me</h2>
-                    <p class="text">Please get in touch if you think our work could be mutually beneficial!</p>
-                    <p class="address">123 Random Road, Random Town, California 12345</p>
-                    <p class="phone-number">555-555-5555</p>
-                    <p class="email">randomemail@randomemail.com</p>
+            <footer>
+                <div class="footer-info-container">
+                    <div class="contact-info-container">
+                        <h2 class="title">Contact Me</h2>
+                        <p class="statement contact-info">Please get in touch if you think our work could be mutually beneficial!</p>
+                        <p class="address contact-info">123 Random Road, Random Town, California 12345</p>
+                        <div class="phone-number-container contact-info">
+                            <img src="./resources/phone.svg" class="icon" alt="">
+                            <p class="phone-number contact-info">555-555-5555</p>
+                        </div>
+                        <div class="email-container contact-info">
+                            <img src="./resources/email.svg" class="icon" alt="">
+                            <p class="email contact-info">randomemail@randomemail.com</p>
+                        </div>
+                        <div class="links-container contact-info">
+                            <img src="./resources/twitter.svg" class="link icon" alt="X, formerly known as twitter">
+                            <img src="./resources/github.svg" class="link icon" alt="GitHub">
+                        </div> 
+                    </div>
+                    <img src="./resources/techygirl300.jpg"
+                        srcset="./resources/techygirl450.jpg 450w, ./resources/techygirl520.jpg 520w, ./resources/techygirl640.jpg 640w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 40vw, min(55vw, 640px)"
+                        alt="" class="picture">
                 </div>
-                <img src="./resources/techygirl300.jpg"
-                    srcset="./resources/techygirl450.jpg 450w, ./resources/techygirl520.jpg 520w, ./resources/techygirl640.jpg 640w"
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 40vw, min(55vw, 640px)"
-                    alt="" class="picture">
             </footer>
         </main>
     </body>

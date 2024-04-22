@@ -11,8 +11,92 @@ h1, h2, h3, h4, h5, h6, p {
 :root {
     font-size: 18px;
     --fontstack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--powderBlue: #98b0b6;
+	--creamYellow: #f2e7d3;
+	--whiteGray: #f0efeb;
 }
 
 body {
     font-family: var(--fontstack);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header,
+footer {
+	background-color: var(--powderBlue);
+}
+
+.header-info-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 60px;
+}
+
+.header-info-container > .name {
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+	/**
+	position: absolute;
+	bottom: 5%;
+	left: 5px;
+	*/
+}
+
+.icon {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.projects-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.projects-container {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.footer-info-container {
+	margin: 40px 60px;
+	display: flex;
+}
+
+.contact-info-container {
+	color: white;
+	margin-right: 40px;
+}
+
+.contact-info-container > .title {
+	font-size: 2.7rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.contact-info {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.phone-number-container,
+.email-container {
+	display: flex;
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 1200px) {
+	
 }
