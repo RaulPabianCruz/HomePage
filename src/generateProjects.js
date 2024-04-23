@@ -1,11 +1,11 @@
 import githubIcon from './resources/github.svg';
 
-function generateTitleContainer() {
+function generateNameContainer() {
   let container = document.createElement('div');
-  container.classList.add('title-container');
+  container.classList.add('project-name-container');
 
   let title = document.createElement('h3');
-  title.classList.add('title');
+  title.classList.add('project-name');
   title.textContent = 'Project Name';
 
   let icon = document.createElement('img');
@@ -26,7 +26,7 @@ function generateProjectExample() {
   placeHolder.textContent =
     'Placeholder Text: This Should be replaced by a screenshot of the project it represents.';
 
-  let titleContainer = generateTitleContainer();
+  let projectNameContainer = generateNameContainer();
 
   let description = document.createElement('p');
   description.classList.add('description');
@@ -34,7 +34,7 @@ function generateProjectExample() {
     "This is placeholder text that should, in the future, be replaced with actual descriptions of the projects they link to. Not sure how I'll easy it'll be to do so and if it will have to be heavily hard-coded.";
 
   container.appendChild(placeHolder);
-  container.appendChild(titleContainer);
+  container.appendChild(projectNameContainer);
   container.appendChild(description);
   return container;
 }
