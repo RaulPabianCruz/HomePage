@@ -31,7 +31,7 @@ function generateProjectExample() {
   let description = document.createElement('p');
   description.classList.add('description');
   description.textContent =
-    "This is placeholder text that should, in the future, be replaced with actual descriptions of the projects they link to. Not sure how I'll easy it'll be to do so and if it will have to be heavily hard-coded.";
+    "This is placeholder text that should, in the future, be replaced with actual descriptions of the projects they link to. Not sure how easy it'll be to do so and if it will have to be heavily hard-coded.";
 
   container.appendChild(placeHolder);
   container.appendChild(projectNameContainer);

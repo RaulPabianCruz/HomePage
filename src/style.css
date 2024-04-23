@@ -23,10 +23,11 @@ body {
 }
 
 main {
-	max-width: 1800px;
+	max-width: 100%;
 	background-color: var(--creamYellow);
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -67,6 +68,8 @@ footer {
 	font-size: 2.7rem;
 	font-weight: bold;
 	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
 	position: absolute;
 	bottom: 0px;
 }
@@ -162,7 +165,45 @@ footer {
 }
 
 @media (max-width: 600px) {
+	:root{
+		font-size: 14px;
+	}
 
+	.projects-section, 
+	.header-info-container {
+		margin: 20px;
+	}
+
+	.title,
+	.projects-section > .title {
+		text-align: center;
+	}
+
+	.header-info-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-info-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0px;
+	}
+
+	.project {
+		padding: 20px;
+	}
+
+	.contact-info-container {
+		margin: 0px;
+		padding: 20px;
+	}
+
+	.footer-info-container > .picture {
+		max-width: 100%;
+	}
 }
 
 @media (max-width: 1200px) {
